@@ -1,0 +1,11 @@
+<body>
+    <main>
+
+        <h2>Espacios disponibles</h2>
+        <div class="space-container">
+          <div *ngFor="let espacio of espaciosDisponibles" [class.space]="true" [ngClass]="{ 'unavailable': verificarDisponibilidad(espacio) }">{{ espacio }}</div>
+        </div>
+      </main> 
+</body>
+
+  
